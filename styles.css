@@ -1,0 +1,205 @@
+/* Task 0 */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f0f4ff;
+  color: #333;
+  line-height: 1.7;
+}
+
+header {
+  background-color: #2c3e50;   /* dark blue-gray */
+  color: white;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 36px;
+}
+
+/* Card */
+.card {
+  max-width: 800px;
+  background-color: white;
+  margin: 30px auto;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.card p {
+  font-size: 18px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 28px;
+  }
+  .card p {
+    font-size: 16px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 320px) {
+  header {
+    padding: 20px 10px;
+    text-align: center;
+  }
+  header h1 {
+    font-size: 22px;
+  }
+  .card {
+    margin: 15px;
+    padding: 15px;
+  }
+  .card p {
+    font-size: 14px;
+    text-align: center;
+  }
+}
+
+
+/* Task 1 */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f4ff;
+  text-align: center;
+}
+
+header {
+  background-color: #2c3e50;
+  color: white;
+  padding: 20px;
+  width: 100%;
+}
+
+h1 {
+  margin: 0;
+}
+
+/* Box styles */
+main {
+  display: flex;
+  flex-wrap: wrap; /* allows boxes to move to next row */
+  padding: 20px;
+  gap: 20px;
+}
+
+.box {
+  background: darkblue;
+  color: white;
+  font-size: 20px;
+  padding: 40px;
+  border-radius: 10px;
+  flex: 1;
+  min-width: 250px;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .box {
+    flex: 1;
+    align-items: center;
+
+  }
+}
+
+/* Mobile */
+@media (max-width: 320px) {
+  main {
+    flex-direction: column;
+    padding: 10px;
+  }
+  .box {
+    align-items: center;
+    flex: none; /* prevents flexbox from resizing */
+    margin: auto;
+  }  
+}
+
+
+
+/* Task 2 */
+
+.column1, .column2, .column3 {
+  color: white;
+  font-size: 20px;
+  padding: 40px;
+  text-align: center;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+/* Different colors so each column is clear */
+.column1 {
+  background-color: #bb62cb; /* blue */
+}
+
+.column2 {
+  background-color: #8b2e26; /* green */
+}
+
+.column3 {
+  background-color: #38277c; /* orange */
+}
+
+/* Task 3 */
+.custom-nav {
+  background-color: #001f3f; 
+}
+
+
+/* Task 4 */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+footer {
+  margin-top: 125px; /* moves the footer to the bottom */
+}
+
+/* Mobile */
+@media (max-width: 320px) {
+  .portfolio-header h1 {
+    font-size: 24px;
+  }
+  .card {
+    margin-bottom: 15px;
+  }
+  
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .portfolio-header h1 {
+    font-size: 32px;
+  }
+  .card {
+    margin-bottom: 20px;
+  }
+  aside {
+    margin-top: 20px;
+  }
+}
+
+/* Desktop (от 992px и выше) */
+@media (min-width: 992px) {
+  .portfolio-header h1 {
+    font-size: 48px;
+  }
+  .card {
+    margin-bottom: 30px;
+  }
+}
+
+
+
